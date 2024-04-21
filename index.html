@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Usermanager Client only</title>
+
+    <script type="text/javascript" src="scripts/userman.js" defer></script>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Usermanager</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h5>Nutzer hinzufügen</h5>
+                    </div>
+                </div>
+                <form id="formInput">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Vorname</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Vorname" name="firstname"
+                               aria-label="Vorname" required>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nachname</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nachname" name="lastname"
+                               aria-label="Nachname" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Email</span>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Email" name="email"
+                               aria-label="Email" required>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Passwort</span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Passwort" name="password"
+                               aria-label="Passwort" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-info">Hinzufügen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h5>Hund hinzufügen</h5>
+                    </div>
+                </div>
+                <form id="formPet">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Name</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Name" name="petName"
+                               aria-label="Name" required>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Art</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Art" name="petKind"
+                               aria-label="Art" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-info">Hinzufügen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h5>Nutzerliste</h5>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Email</th>
+                        <th scope="col">Nachname</th>
+                        <th scope="col">Vorname</th>
+                        <th scope="col">Aktionen</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tableUser">
+                    <!-- Hier werden die Benutzer dynamisch eingefügt -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h5>Hundeliste</h5>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Art</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tablePets">
+                    <!-- Hier werden die Hunde dynamisch eingefügt -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
